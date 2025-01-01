@@ -5,8 +5,7 @@ import {useState} from 'react';
 function App() {
 
   const [tasksList, addTask] = useState(
-    [{task: "Walk Dogs", status: true},
-    {task: "Eat", status: false}]
+    []
   );
 
   let [input, curInput] = useState("");
