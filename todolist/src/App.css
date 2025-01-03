@@ -1,12 +1,86 @@
-.App {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   transition: background-color 0.5s ease;
+  background-image: url("./photos/75df99d2faac34c0cbb12dd118101317.gif");
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+@font-face {
+  font-family: heading-font;
+  src: url(./fonts/Archivo-Black.ttf); 
+}
+
+@font-face {
+  font-family: subheading-font;
+  src: url(./fonts/Poppins-LightItalic.ttf); 
+
+}
+
+@font-face {
+  font-family: body-font;
+  src: url(./fonts/Poppins-Light.ttf); 
 
 }
 
 .Headline {
+  font-family: heading-font;
+  font-size: 50px;
+  color: #f5e5d7;
+  margin: 0;
+
+}
+
+.Subheading {
+  font-family: subheading-font;
   font-size: 30px;
-  
+  color: #f5e5d7;
+  margin: 0;
+
+
+}
+
+.Text {
+  display: flex;
+  margin: 100px;
+  width:fit-content;
+  flex-direction: column;
+  border: 2px solid red;
+  justify-content: left; 
+
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: auto;
+  margin: 100px;
+
+}
+
+#Input {
+  height: fit-content;
+  overflow: hidden;
+
+}
+
+#Add {
+  background-color: #cc543c;
+  font-family: heading-font;
+  font-size: 30px;
+  color: #f5e5d7;
+  appearance: none;
+  width: 200px;
+  height: fit-content;
+  box-shadow: none;
+  border: none;
+
+
 }
