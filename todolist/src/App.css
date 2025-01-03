@@ -11,6 +11,13 @@ body {
 
 }
 
+.Useful {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;  
+}
+
 
 @font-face {
   font-family: heading-font;
@@ -33,25 +40,40 @@ body {
   font-family: heading-font;
   font-size: 50px;
   color: #f5e5d7;
-  margin: 0;
 
 }
 
 .Subheading {
   font-family: subheading-font;
   font-size: 30px;
-  color: #f5e5d7;
   margin: 0;
+  color: #f5e5d7;
 
+}
 
+.Left {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50vw;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+
+}
+
+.Right {
+  background-image: url("./photos/ooeeaaee.gif");
+  background-size: cover;
+  background-position: center; 
+  height: 40vw;
+  width: 40vw;
+  
 }
 
 .Text {
   display: flex;
-  margin: 100px;
+  margin-left: 40px;
   width:fit-content;
   flex-direction: column;
-  border: 2px solid red;
   justify-content: left; 
 
 }
@@ -61,13 +83,17 @@ body {
   flex-direction: column;
   width: fit-content;
   height: auto;
-  margin: 100px;
+  margin-left: 40px;
+  justify-content: left;
+
 
 }
 
 #Input {
-  height: fit-content;
+  height: 40px;
+  font-size: 20px;
   overflow: hidden;
+  width: 40vw;
 
 }
 
@@ -81,6 +107,51 @@ body {
   height: fit-content;
   box-shadow: none;
   border: none;
+  margin-bottom: 40px;
 
 
+}
+
+.word {
+  color: #f5e5d7;
+  font-family: body-font;
+  font-size: 20px;
+
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+
+}
+
+#Complete {
+  width: 25px;
+  height: 25px;
+
+}
+
+.amogus {
+  background-image: url("./photos/among-us-twerk.gif");
+  background-position: center; 
+  height: 20vh;
+  width: 100vw;
+  background-repeat: repeat-x;
+
+}
+
+.mog {
+  background-image: url("./photos/mogging-mewing.gif");
+  background-position: center; 
+  height: 90vh;
+  width: 40vw;
+  background-size: cover;
+
+}
+
+.Surprise {
+  display: flex;
+  flex-direction: row;
 }
