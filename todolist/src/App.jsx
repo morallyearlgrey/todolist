@@ -51,7 +51,7 @@ function App() {
           addTask([...tasksList, {task: input, status: false}]); 
           playAudio();
           }}>ADD TASK</button>
-        {/* <button id="Brainrotify" onClick={() => { showAmogus(amogus=!amogus); if(amogus) { surpriseAudio(); } }}>you know you want to click me 😏 oh you want to so bad</button> */}
+        <button id="Brainrotify" onClick={() => { showAmogus(amogus=!amogus); if(amogus) { surpriseAudio(); } }}>you know you want to click me 😏 oh you want to so bad</button>
       </div>
       </div>
       <div className="Right">
