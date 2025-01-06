@@ -112,6 +112,11 @@ body {
 
 }
 
+#Add:hover {
+  background-color: #ed7e67;
+
+}
+
 .word {
   color: #f5e5d7;
   font-family: body-font;
