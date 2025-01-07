@@ -94,6 +94,7 @@ body {
   font-size: 20px;
   overflow: hidden;
   width: 40vw;
+  background-color: #ffffff;
 
 }
 
@@ -108,11 +109,12 @@ body {
   box-shadow: none;
   border: none;
   margin-bottom: 40px;
+  border-radius: 7px;
 
 
 }
 
-#Add:hover {
+#Add:hover, #Delete:hover {
   background-color: #ed7e67;
 
 }
@@ -133,8 +135,40 @@ body {
 }
 
 #Complete {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #ffffff;
+  color:#3e3736;
+}
+
+#Complete:hover {
+  background-color: #e8e2e2;
+
+}
+
+#Delete {
+  width: fit-content;
+  height: 20px;
+  background-color: #cc543c;
+  border-radius: 5px;
+  color: #f5e5d7;
+
+}
+
+#AudioToggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 30px;
+  color:#3e3736;
+  background-color: #ffffff;
+
+  
+}
+
+#AudioToggle:hover {
+  background-color: #e8e2e2;
 
 }
 

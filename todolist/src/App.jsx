@@ -22,6 +22,7 @@ function App() {
   const [tasksList, addTask] = useState([]);
   const [input, curInput] = useState("");
   let [amogus, showAmogus] = useState(false);
+  let [audioBool, updateAudioBool] = useState(true);
 
   return (
     <div className="App">
@@ -36,22 +37,33 @@ function App() {
         <h1>{ tasksList.map((task, key) => { 
           return(
           <div className="tasks">
-            <button id="Complete" onClick={() => { 
-              const newTaskList = tasksList.map((ntask, i) => i === key ? {...ntask, status: !ntask.status } : ntask); 
-              addTask(newTaskList); 
-              
-            }
-          }> </button> 
-          <Task task={task.task} status={task.status}/></div>)
-          } ) }</h1>
+           <button id="Complete" onClick={() => {
+              const newTaskList = tasksList.map((ntask, i) => 
+                i === key ? { ...ntask, status: !ntask.status } : ntask
+              );    
+              addTask(newTaskList);
+            }}>{task.status ? "✔" : " "}</button>
+          <Task task={task.task} status={task.status}/>
+          <button id="Delete" onClick={() => { 
+              const newTaskList = [...tasksList];
+              newTaskList.splice(key, 1);
+              addTask(newTaskList);
+          }}>Delete</button>
+          </div>)
+          } ) }
+        </h1>
         <input id="Input" type="text" value={input} onInput={(e) => { curInput(e.target.value); }}></input>
         <br></br>
         <button id="Add" onClick={() => { 
           curInput(""); 
           addTask([...tasksList, {task: input, status: false}]); 
-          playAudio();
+          if(audioBool===true) {
+            playAudio();
+          }
           }}>ADD TASK</button>
+          <button id="AudioToggle" onClick={() => { updateAudioBool(audioBool=!audioBool); } }>♫</button>
         {/* <button id="Brainrotify" onClick={() => { showAmogus(amogus=!amogus); if(amogus) { surpriseAudio(); } }}>you know you want to click me 😏 oh you want to so bad</button> */}
+        <br></br>
       </div>
       </div>
       <div className="Right">
