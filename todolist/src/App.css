@@ -140,6 +140,9 @@ body {
   font-size: 30px;
   background-color: #ffffff;
   color:#3e3736;
+  border: none;
+  box-shadow: none;
+
 }
 
 #Complete:hover {
@@ -153,6 +156,8 @@ body {
   background-color: #cc543c;
   border-radius: 5px;
   color: #f5e5d7;
+  border: none;
+  box-shadow: none;
 
 }
 
@@ -163,7 +168,8 @@ body {
   font-size: 30px;
   color:#3e3736;
   background-color: #ffffff;
-
+  border: none;
+  box-shadow: none;
   
 }
 
