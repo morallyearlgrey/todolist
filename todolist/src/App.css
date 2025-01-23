@@ -198,4 +198,24 @@ body {
     height: 90vw;
     width: 90vw;
   }
+  #Complete {
+    width: 30px;
+    height: 30px;
+  
+  }
+  .Headline {
+    font-size: 3rem;
+
+  }
+  .Subheading {
+    font-size: 1.8rem;
+  
+  }
+  #Add, #Input {
+    width: 60vw;
+    display: flex;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+  }
 }
