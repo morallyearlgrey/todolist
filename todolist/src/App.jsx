@@ -34,7 +34,7 @@ function App() {
                 i === key ? { ...ntask, status: !ntask.status } : ntask
               );    
               addTask(newTaskList);
-            }}>{task.status ? "✔" : "‎  ‎    ‎   ‎"}</button>
+            }}>{task.status ? "✔" : "‎ ‎ ‎"}</button>
           <Task task={task.task} status={task.status}/>
           <button id="Delete" onClick={() => { 
               const newTaskList = [...tasksList];
