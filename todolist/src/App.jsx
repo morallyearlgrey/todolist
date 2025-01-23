@@ -23,7 +23,7 @@ function App() {
       <div className="Left">
       <div className="Text">
         <h1 className="Headline">TO-DO LIST</h1>
-        <h1 className="Subheading">DESTROYER OF ALL THAT IS PROCRASTINATION</h1>
+        <h1 className="Subheading">SIMPLE BROWSER TASK ORGANIZER</h1>
       </div>
       <div className="Content">
         <h1>{ tasksList.map((task, key) => { 
