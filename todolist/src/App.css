@@ -19,7 +19,6 @@ body {
   justify-content: center;  
 }
 
-
 @font-face {
   font-family: heading-font;
   src: url(./fonts/Archivo-Black.ttf); 
@@ -180,4 +179,23 @@ body {
 #AudioToggle:hover {
   background-color: #e8e2e2;
 
+}
+
+@media (max-width: 768px) { 
+  .Useful{
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;
+  }
+  .Left {
+    width: 80vw;
+    margin-left: 0;
+    height: fit-content;
+  
+  }
+  .Right {
+    height: 90vw;
+    width: 90vw;
+  }
 }
