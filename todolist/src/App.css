@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.5s ease;
-  background-image: url("./photos/75df99d2faac34c0cbb12dd118101317.gif");
   height: 100vh;
   width: auto;
+  background-image: radial-gradient(circle at bottom, #d96643 50%, #f6bda2 80%);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -52,16 +52,17 @@ body {
 }
 
 .Left {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(48, 29, 29, 0.5);
   width: 50vw;
   margin-top: 40px;
   margin-left: 40px;
+  border-radius: 10px;
   margin-bottom: 40px;
 
 }
 
 .Right {
-  background-image: url("./photos/ooeeaaee.gif");
+  background-image: url("./photos/todolistGraphic.png");
   background-size: cover;
   background-position: center; 
   height: 40vw;
@@ -95,11 +96,13 @@ body {
   overflow: hidden;
   width: 40vw;
   background-color: #ffffff;
+  border: none;
+  box-shadow: none;
 
 }
 
 #Add {
-  background-color: #cc543c;
+  background-color: #3b79d7;
   font-family: heading-font;
   font-size: 30px;
   color: #f5e5d7;
@@ -115,7 +118,7 @@ body {
 }
 
 #Add:hover, #Delete:hover {
-  background-color: #ed7e67;
+  background-color: #2466c8;
 
 }
 
@@ -153,7 +156,7 @@ body {
 #Delete {
   width: fit-content;
   height: 20px;
-  background-color: #cc543c;
+  background-color: #3b79d7;
   border-radius: 5px;
   color: #f5e5d7;
   border: none;
@@ -176,31 +179,4 @@ body {
 #AudioToggle:hover {
   background-color: #e8e2e2;
 
-}
-
-.amogus {
-  background-image: url("./photos/among-us-twerk.gif");
-  background-position: center; 
-  height: 20vh;
-  width: 100vw;
-  background-repeat: repeat-x;
-
-}
-
-.mog {
-  background-image: url("./photos/mogging-mewing.gif");
-  background-position: center; 
-  height: 90vh;
-  width: 40vw;
-  background-size: cover;
-
-}
-
-.Surprise {
-  display: flex;
-  flex-direction: row;
-}
-
-#Brainrotify {
-  font-size: 20px;
 }
