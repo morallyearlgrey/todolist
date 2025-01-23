@@ -15,7 +15,7 @@ function App() {
   const [tasksList, addTask] = useState([]);
   const [input, curInput] = useState("");
   let [audioBool, updateAudioBool] = useState(true);
-  let [audioText, updateAudioText] = useState("♫");
+  let [audioText, updateAudioText] = useState("🎧");
 
   return (
     <div className="App">
@@ -34,7 +34,7 @@ function App() {
                 i === key ? { ...ntask, status: !ntask.status } : ntask
               );    
               addTask(newTaskList);
-            }}>{task.status ? "✔" : " "}</button>
+            }}>{task.status ? "✔" : "‎  ‎    ‎   ‎"}</button>
           <Task task={task.task} status={task.status}/>
           <button id="Delete" onClick={() => { 
               const newTaskList = [...tasksList];
@@ -54,7 +54,7 @@ function App() {
             
           } 
           }}>ADD TASK</button>
-            <button id="AudioToggle" onClick={() => { updateAudioBool(audioBool=!audioBool); if(audioBool) { updateAudioText("♫"); } else { updateAudioText("̶♫̶"); } } }>{audioText}</button>
+            <button id="AudioToggle" onClick={() => { updateAudioBool(audioBool=!audioBool); if(audioBool) { updateAudioText("🎧"); } else { updateAudioText("🔇"); } } }>{audioText}</button>
         <br></br>
       </div>
       </div>

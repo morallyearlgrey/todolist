@@ -198,9 +198,9 @@ body {
     height: 90vw;
     width: 90vw;
   }
-  #Complete {
-    width: 30px;
-    height: 30px;
+  #Complete, #AudioToggle {
+    width: fit-content;
+    height: fit-content;
   
   }
   .Headline {
